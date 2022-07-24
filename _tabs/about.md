@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-### *I am a cyber security specialist, red teamer and capture the flag player.*
+### I am a cyber security specialist, red teamer and capture the flag player.
 
 If you want to read a little bit more, check out my blog on [Medium](https://syro.medium.com/){:target="blank"}.
 
