@@ -5,6 +5,5 @@ order: 4
 ---
 
 $ | Red Teamer :: CTF Player |
-$ | [HackTheBox Profile](https://app.hackthebox.com/profile/156456)
-
-<script src="https://www.hackthebox.eu/badge/156456"></script>
+$ | [HackTheBox Profile](https://app.hackthebox.com/profile/156456){:target="_blank"} |
+$ | <script src="https://www.hackthebox.eu/badge/156456"></script> |
