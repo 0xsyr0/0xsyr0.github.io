@@ -4,4 +4,4 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-$ | Red Teamer :: CTF Player
+<script src="https://www.hackthebox.eu/badge/156456"></script>
