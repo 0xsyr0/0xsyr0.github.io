@@ -65,6 +65,8 @@
 
     {% for entry in site.data.contact %}
       {% capture url %}
+        {%- if entry.type == 'hackthebox' -%}
+	  https://app.hackthebox.com/{{ site.hackthebox.username }}
         {%- if entry.type == 'github' -%}
           https://github.com/{{ site.github.username }}
         {%- elsif entry.type == 'twitter' -%}
@@ -72,8 +74,6 @@
         {%- elsif entry.type == 'email' -%}
           {% assign email = site.social.email | split: '@' %}
           javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
-        {%- elsif entry.type == 'rss' -%}
-          {{ "/feed.xml" | relative_url }}
         {%- else -%}
           {{ entry.url }}
         {%- endif -%}
