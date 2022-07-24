@@ -6,7 +6,8 @@ order: 4
 
 ### I am a cyber security specialist, red teamer and capture the flag player.
 
-If you want to read a little bit more, check out my blog on [Medium](https://syro.medium.com/){:target="blank"}. In case that you are looking for a CTF team, feel free to open a join request on my team.
+If you want to read a little bit more, check out my blog on [Medium](https://syro.medium.com/){:target="blank"}.
+In case that you are looking for a CTF team, feel free to open a join request on my team.
 
 | <script src="https://www.hackthebox.eu/badge/156456"></script> |
 | [HackTheBox Profile](https://app.hackthebox.com/profile/156456){:target="_blank"} |
