@@ -47,7 +47,6 @@ social:
   email: syr0@protonmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://app.hackthebox.com/profile/156456
     - https://github.com/0xsyr0       # change to your github homepage
     - https://twitter.com/syr0_      # change to your twitter homepage
     # Uncomment below to add more social links

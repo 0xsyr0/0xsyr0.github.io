@@ -1,9 +1,6 @@
 #  The contact options.
 
 -
-  type: hackthebox
-  icon: 'fab fa-cube'
--
   type: github
   icon: 'fab fa-github'
 -
