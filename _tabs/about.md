@@ -10,6 +10,6 @@ If you want to read a little bit more, check out my blog on [Medium](https://syr
 
 In case that you are looking for a CTF team, feel free to open a join request on my team.
 
-| <script src="https://www.hackthebox.eu/badge/156456"></script> <script src="https://tryhackme.com/badge/156643"></script> |
+<script src="https://www.hackthebox.eu/badge/156456"></script> <script src="https://tryhackme.com/badge/156643"></script>
 
 Do you want to support me? Then you can [Buy Me a Coffee](https://buymeacoffee.com/0xsry0){:target="blank"}. I would really appreciate it.
