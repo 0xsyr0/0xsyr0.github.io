@@ -11,5 +11,7 @@ In case that you are looking for a CTF team, feel free to open a join request on
 
 | <script src="https://www.hackthebox.eu/badge/156456"></script> |
 | [HackTheBox Profile](https://app.hackthebox.com/profile/156456){:target="_blank"} |
+| <script src="https://tryhackme.com/badge/156643"></script> |
+| [TryHackMe Profile](https://tryhackme.com/p/syro){:target="_blank"} |
 
 Do you want to support me? Then you can [Buy Me a Coffee](https://buymeacoffee.com/0xsry0){:target="blank"}. I would really appreciate it.
