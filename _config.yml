@@ -37,8 +37,8 @@ hackthebox:
 github:
   username: 0xsyr0             # change to your github username
 
-twitter:
-  username: syr0_            # change to your twitter username
+x:
+  username: syr0_            # change to your x username
 
 social:
   # Change to your full name.
@@ -48,7 +48,7 @@ social:
   links:
     # The first element serves as the copyright owner's link
     - https://github.com/0xsyr0       # change to your github homepage
-    - https://twitter.com/syr0_      # change to your twitter homepage
+    - https://x.com/syr0_      # change to your x homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username

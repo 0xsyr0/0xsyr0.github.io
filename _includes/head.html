@@ -28,7 +28,7 @@
   {% endcapture %}
 
   {% if site.img_cdn and seo_tags contains 'og:image' %}
-    {% assign properties = 'og:image,twitter:image' | split: ',' %}
+    {% assign properties = 'og:image,x:image' | split: ',' %}
 
     {% for prop in properties %}
       {% if site.img_cdn contains '//' %}
