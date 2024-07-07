@@ -16,17 +16,17 @@ lang: en
 prefer_datetime_locale:
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Europe/Dublin
+timezone: Europe/Berlin
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
 title: 0xsyr0                          # the main title
 
-tagline: Hack The Box Writeups for retired Machines   # it will display as the sub-title
+tagline: Personal blog.   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Hack The Box Writeups for retired Machines
+  Cybersecurity topics all over.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: ''
