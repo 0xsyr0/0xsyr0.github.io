@@ -220,7 +220,7 @@
 
             const fontSize = 16;
             const columns = canvas.width / fontSize;
-            const maxDropHeight = canvas.height * 0.2; // Only fall to 20% of screen height (shorter)
+            const maxDropHeight = canvas.height * 0.15; // Only fall to 15% of screen height (much shorter)
 
             const drops = [];
             for (let i = 0; i < columns; i++) {
@@ -240,7 +240,7 @@
                     
                     // Calculate fade based on how close to maxDropHeight
                     const currentY = drops[i] * fontSize;
-                    const fadeStart = maxDropHeight * 0.25; // Start fading very early
+                    const fadeStart = maxDropHeight * 0.2; // Start fading very early at 20%
                     let opacity = 1;
                     
                     if (currentY > fadeStart) {
