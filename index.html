@@ -240,11 +240,13 @@
                     
                     // Calculate fade based on how close to maxDropHeight
                     const currentY = drops[i] * fontSize;
-                    const fadeStart = maxDropHeight * 0.5;
+                    const fadeStart = maxDropHeight * 0.3; // Start fading earlier
                     let opacity = 1;
                     
                     if (currentY > fadeStart) {
-                        opacity = 1 - ((currentY - fadeStart) / (maxDropHeight - fadeStart));
+                        // Smoother exponential fade
+                        const fadeProgress = (currentY - fadeStart) / (maxDropHeight - fadeStart);
+                        opacity = Math.pow(1 - fadeProgress, 2); // Quadratic easing for smoother fade
                     }
                     
                     // Purple color with opacity
