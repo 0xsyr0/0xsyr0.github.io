@@ -103,6 +103,7 @@ nav {
     justify-content: center;
     position: relative;
     overflow: hidden;
+    background: var(--bg-primary);
 }
 
 /* Binary Rain Canvas */
@@ -191,11 +192,11 @@ nav {
     border-bottom: 1px solid var(--border-subtle);
     position: relative;
     z-index: 1;
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
 }
 
 .section-alt {
-    background: var(--bg-primary);
+    background: var(--bg-secondary);
 }
 
 .section-no-border {
