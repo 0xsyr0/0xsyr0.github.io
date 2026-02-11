@@ -165,7 +165,7 @@ nav {
 }
 
 .btn-primary {
-    background: var(--bg-tertiary);
+    background: var(--bg-primary);
     color: var(--text-primary);
     border-color: var(--border-accent);
 }
@@ -230,7 +230,7 @@ nav {
 }
 
 .project-card {
-    background: var(--bg-tertiary);
+    background: var(--bg-primary);
     border: 1px solid var(--border-accent);
     padding: 24px;
     transition: all 0.3s;
@@ -293,7 +293,7 @@ nav {
 }
 
 .blog-side-nav:hover:not(:disabled) {
-    background: var(--bg-tertiary);
+    background: var(--bg-primary);
     border-color: var(--purple-accent);
     color: var(--text-primary);
 }
@@ -329,7 +329,7 @@ nav {
 }
 
 .blog-card {
-    background: var(--bg-tertiary);
+    background: var(--bg-primary);
     border: 1px solid var(--border-accent);
     padding: 24px;
     transition: all 0.3s;
@@ -394,7 +394,7 @@ nav {
     align-items: center;
     justify-content: center;
     border-radius: 6px;
-    background: var(--bg-tertiary);
+    background: var(--bg-primary);
     color: var(--text-secondary);
     width: 52px;
     height: 52px;
@@ -419,7 +419,7 @@ nav {
 }
 
 .training-card {
-    background: var(--bg-tertiary);
+    background: var(--bg-primary);
     border: 1px solid var(--border-accent);
     padding: 24px;
     border-radius: 8px;
@@ -461,7 +461,7 @@ nav {
 }
 
 .cert-card {
-    background: var(--bg-tertiary);
+    background: var(--bg-primary);
     border: 1px solid var(--border-accent);
     padding: 24px;
     border-radius: 8px;
