@@ -24,6 +24,8 @@
     </nav>
 
     <header class="hero">
+        <!-- Binary Rain Background -->
+        <canvas id="binaryRain"></canvas>
         <div class="container">
             <div class="hero-content">
                 <h1 class="glitch" data-text="syro">syro</h1>
@@ -208,6 +210,66 @@
     </footer>
 
     <script>
+        // Binary Rain Effect
+        window.addEventListener('DOMContentLoaded', function() {
+            const canvas = document.getElementById('binaryRain');
+            const ctx = canvas.getContext('2d');
+
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const fontSize = 16;
+            const columns = canvas.width / fontSize;
+            const maxDropHeight = canvas.height * 0.3; // Only fall to 30% of screen height
+
+            const drops = [];
+            for (let i = 0; i < columns; i++) {
+                drops[i] = Math.random() * -50; // Start at different positions
+            }
+
+            function drawBinaryRain() {
+                // Create fade effect
+                ctx.fillStyle = 'rgba(10, 10, 15, 0.1)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                ctx.font = fontSize + 'px monospace';
+
+                for (let i = 0; i < drops.length; i++) {
+                    // Random 0 or 1
+                    const text = Math.random() > 0.5 ? '1' : '0';
+                    
+                    // Calculate fade based on how close to maxDropHeight
+                    const currentY = drops[i] * fontSize;
+                    const fadeStart = maxDropHeight * 0.5;
+                    let opacity = 1;
+                    
+                    if (currentY > fadeStart) {
+                        opacity = 1 - ((currentY - fadeStart) / (maxDropHeight - fadeStart));
+                    }
+                    
+                    // Purple color with opacity
+                    ctx.fillStyle = `rgba(107, 45, 138, ${opacity})`;
+                    
+                    // Draw the character
+                    ctx.fillText(text, i * fontSize, currentY);
+
+                    // Reset drop when it reaches max height or goes off screen
+                    if (currentY > maxDropHeight && Math.random() > 0.98) {
+                        drops[i] = 0;
+                    }
+
+                    drops[i]++;
+                }
+            }
+
+            setInterval(drawBinaryRain, 80);
+
+            window.addEventListener('resize', () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+        });
+
         // Blog navigation
         const blogGrid = document.getElementById('blogGrid');
         const prevBtn = document.getElementById('prevBtn');

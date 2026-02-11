@@ -106,6 +106,18 @@ nav {
     background: var(--bg-primary);
 }
 
+/* Binary Rain Canvas */
+#binaryRain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
 .hero-content {
     text-align: center;
     z-index: 1;
@@ -178,6 +190,8 @@ nav {
 .section {
     padding: 100px 0;
     border-bottom: 1px solid var(--border-subtle);
+    position: relative;
+    z-index: 1;
 }
 
 .section-alt {
