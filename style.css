@@ -1,7 +1,7 @@
 /* Color Palette - Dark & Minimal */
 :root {
-    --bg-primary: #12121a;
-    --bg-secondary: #0a0a0f;
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #12121a;
     --bg-tertiary: #1a1a24;
     --purple-accent: #6b2d8a;
     --purple-muted: #4a1b6b;
@@ -193,10 +193,6 @@ nav {
     position: relative;
     z-index: 1;
     background: var(--bg-primary);
-}
-
-.section-alt {
-    background: var(--bg-secondary);
 }
 
 .section-no-border {
