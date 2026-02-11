@@ -220,7 +220,7 @@
 
             const fontSize = 16;
             const columns = canvas.width / fontSize;
-            const maxDropHeight = canvas.height * 0.15; // Only fall to 15% of screen height (much shorter)
+            const maxDropHeight = canvas.height * 0.3; // Only fall to 30% of screen height
 
             const drops = [];
             for (let i = 0; i < columns; i++) {
@@ -240,13 +240,11 @@
                     
                     // Calculate fade based on how close to maxDropHeight
                     const currentY = drops[i] * fontSize;
-                    const fadeStart = maxDropHeight * 0.2; // Start fading very early at 20%
+                    const fadeStart = maxDropHeight * 0.5;
                     let opacity = 1;
                     
                     if (currentY > fadeStart) {
-                        // Smoother exponential fade
-                        const fadeProgress = (currentY - fadeStart) / (maxDropHeight - fadeStart);
-                        opacity = Math.pow(1 - fadeProgress, 2); // Quadratic easing for smoother fade
+                        opacity = 1 - ((currentY - fadeStart) / (maxDropHeight - fadeStart));
                     }
                     
                     // Purple color with opacity
