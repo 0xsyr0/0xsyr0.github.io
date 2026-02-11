@@ -103,7 +103,6 @@ nav {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background: var(--bg-primary);
 }
 
 /* Binary Rain Canvas */
