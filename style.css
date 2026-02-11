@@ -191,10 +191,11 @@ nav {
     border-bottom: 1px solid var(--border-subtle);
     position: relative;
     z-index: 1;
+    background: var(--bg-secondary);
 }
 
 .section-alt {
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
 }
 
 .section-no-border {
