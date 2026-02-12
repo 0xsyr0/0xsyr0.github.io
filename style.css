@@ -3,6 +3,7 @@
     --bg-primary: #0a0a0f;
     --bg-secondary: #12121a;
     --bg-tertiary: #1a1a24;
+    --bg-darker: #08080c;
     --purple-accent: #6b2d8a;
     --purple-muted: #4a1b6b;
     --pink-accent: #ff0099;
@@ -193,6 +194,10 @@ nav {
     position: relative;
     z-index: 1;
     background: var(--bg-primary);
+}
+
+.section-alt {
+    background: var(--bg-darker);
 }
 
 .section-no-border {
@@ -497,7 +502,7 @@ nav {
 
 /* Footer */
 footer {
-    background: var(--bg-primary);
+    background: var(--bg-darker);
     padding: 40px 0;
     text-align: center;
     border-top: 1px solid var(--border-subtle);
