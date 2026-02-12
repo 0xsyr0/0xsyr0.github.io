@@ -15,12 +15,13 @@
 ## Features
 
 - Purple cyberpunk aesthetic with dark background
-- Zero dependencies - pure HTML/CSS
+- Animated binary rain effect in hero section
+- Zero dependencies - pure HTML/CSS/vanilla JavaScript
 - Fully responsive design
 - GitHub Pages ready
 - Easy blog management
 - Portfolio section for projects
-- Social media integration
+- Social media integration with SVG icons
 
 ## Quick Start
 
@@ -80,7 +81,8 @@
 ## Styling Guide
 
 ### Colors
-- Primary Background: `#0a0a0f`
+- Primary Background: `#0a0a0f` (main sections)
+- Darker Background: `#08080c` (Projects section, footer)
 - Secondary Background: `#12121a`
 - Tertiary Background: `#1a1a24`
 - Purple Accent: `#6b2d8a`
@@ -104,6 +106,7 @@ Edit the CSS variables in `style.css`:
 ```css
 :root {
     --bg-primary: #0a0a0f;
+    --bg-darker: #08080c;
     --purple-accent: #6b2d8a;
     /* ... etc */
 }
@@ -111,12 +114,12 @@ Edit the CSS variables in `style.css`:
 
 ### Modify Layout
 All sections are in `index.html`:
-- Navigation: Lines 8-18
-- Hero: Lines 20-35
-- About: Lines 37-48
-- Projects: Lines 50-80
-- Blog: Lines 82-122
-- Social: Lines 154-228
+- Navigation: Lines 10-22
+- Hero (with binary rain): Lines 24-38
+- About: Lines 40-51
+- Projects: Lines 53-88
+- Blog: Lines 90-133
+- Social: Lines 166-240
 
 ### Add New Sections
 Follow the pattern:
@@ -143,28 +146,28 @@ Follow the pattern:
 
 ## Social Media Links
 
-Update these in the "Social" section:
+Update these in the "Social" section. All icons are simple SVG pictograms (not official brand logos):
 
 ```html
-<!-- Hack The Box -->
+<!-- Hack The Box (cube icon) -->
 <a href="https://app.hackthebox.com/profile/156456">
 
-<!-- TryHackMe -->
+<!-- TryHackMe (cloud icon) -->
 <a href="https://tryhackme.com/p/syro">
 
-<!-- GitHub -->
+<!-- GitHub (git branch icon) -->
 <a href="https://github.com/0xsyr0">
 
-<!-- Discord -->
+<!-- Discord (chat bubble icon) -->
 <a href="https://discord.gg/purplestorm">
 
-<!-- X (Twitter) -->
+<!-- X (Twitter) (X logo) -->
 <a href="https://twitter.com/syr0_">
 
-<!-- BlueSky -->
+<!-- BlueSky (butterfly icon) -->
 <a href="https://bsky.app/profile/0xsyr0.bsky.social">
 
-<!-- Mastodon -->
+<!-- Mastodon (mastodon logo) -->
 <a href="https://infosec.exchange/@syro">
 ```
 
