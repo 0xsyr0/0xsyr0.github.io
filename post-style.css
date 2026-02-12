@@ -1,3 +1,20 @@
+/* Color Palette - Dark & Minimal */
+:root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #12121a;
+    --bg-tertiary: #1a1a24;
+    --bg-darker: #08080c;
+    --purple-accent: #6b2d8a;
+    --purple-muted: #4a1b6b;
+    --pink-accent: #ff0099;
+    --cyan-accent: #00d9ff;
+    --text-primary: #e0e0e0;
+    --text-secondary: #9090a0;
+    --text-muted: #606070;
+    --border-subtle: #2a2a35;
+    --border-accent: #3a3a45;
+}
+
 /* Post-specific styles */
 .post {
     min-height: 100vh;
