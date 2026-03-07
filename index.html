@@ -229,6 +229,9 @@
             let columns;
             let maxDropHeight;
 
+            const frameInterval = 80;
+            let lastFrameTime = 0;
+
             function initCanvas() {
                 canvas.width = window.innerWidth;
                 canvas.height = window.innerHeight;
@@ -240,7 +243,11 @@
                 }
             }
 
-            function drawBinaryRain() {
+            function drawBinaryRain(timestamp) {
+                animationId = requestAnimationFrame(drawBinaryRain);
+
+                if (timestamp - lastFrameTime < frameInterval) return;
+                lastFrameTime = timestamp;
                 ctx.fillStyle = 'rgba(10, 10, 15, 0.1)';
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
                 ctx.font = fontSize + 'px monospace';
@@ -269,19 +276,19 @@
             }
 
             initCanvas();
-            drawBinaryRain();
+            animationId = requestAnimationFrame(drawBinaryRain);
 
             window.addEventListener('resize', () => {
                 cancelAnimationFrame(animationId);
                 initCanvas();
-                drawBinaryRain();
+                animationId = requestAnimationFrame(drawBinaryRain);
             });
 
             document.addEventListener('visibilitychange', () => {
                 if (document.hidden) {
                     cancelAnimationFrame(animationId);
                 } else {
-                    drawBinaryRain();
+                    animationId = requestAnimationFrame(drawBinaryRain);
                 }
             });
 
